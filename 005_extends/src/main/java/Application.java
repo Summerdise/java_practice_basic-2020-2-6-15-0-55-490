@@ -7,6 +7,16 @@ public class Application {
      * 心满意足之后就睡觉了。
      */
     public static void main(String[] args) {
-
+        Eagle eagle = new Eagle(4,5,30,"兔子");
+        int age = eagle.age;
+        int weight = eagle.weight;
+        int speed = eagle.speed;
+        String food = eagle.eatObject;
+        System.out.println(String.format("一只%d岁的老鹰，体重%dKg，这只老鹰生活在%s窝所以它只捕食%s。"
+                ,age,weight,food,food));
+        eagle.howFly();
+        eagle.eatWay();
+        eagle.eat(food);
+        eagle.sleep();
     }
 }
